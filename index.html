@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Forum - April 2018</title>
+
+		<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/e64ebe26-da02-4a9c-a8dd-c5422820799c.css" />
+
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/archer.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -20,12 +23,82 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+		.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+			font-family: "Avenir LT W01_95 Black";
+			font-weight: 500;
+			line-height: 1.1;
+			color: inherit;
+		}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Google Lighthouse</h2>
+					<p>Page optimization and auditing</p>
+				</section>
+				<section>
+					<section>
+						<h2>What is Lightouse?</h2>
+					</section>
+					<section>
+						<p>Google's open-source, automated tool for improving the quality of web pages.</p>
+						<p class="fragment">A good baseline for improving web page performance, with a focus on mobile.</p>
+						<p class="fragment">The "Audits" tab of the Chrome console.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Define "Quality"</h2>
+					</section>
+					<section>
+						<p>Lighthouse defines quality in 5 ways.</p>
+						<ul>
+							<li>Performance</li>
+							<li>PWA-ness</li>
+							<li>Accessibility</li>
+							<li>Best Practices</li>
+							<li>SEO</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Define "Performance"</h2>
+					</section>
+					<section>
+						<p>Load speed <em>with a mobile focus</em>.  Chrome loads the page over a simulated 3G connection.</p>
+						<p></p>
+						<p>The biggest metrics are:</p>
+						<ul>
+							<li>First meaningful paint - <em>starts to look right</em></li>
+							<li>First interactive - <em>usable</em></li>
+							<li>Consistently interactive - <em>completely loaded</em></li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>What?</h2>
+				</section>
+				<section>
+					<h2>DEMO</h2>
+				</section>
+				<section>
+					<section>
+						<h2>How do we improve performance?</h2>
+					</section>
+					<section>
+						<h2>Reduce the critical request chain!</h2>
+						<ul>
+							<li>Reduce page weight - optimize images, minify CSS &amp; JS, enable compression</li>
+							<li>Lazy-load images when possible</li>
+							<li>Reduce render-blocking CSS &amp; JS</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
